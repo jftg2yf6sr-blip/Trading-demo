@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <title>Pro FX</title>
+
+  <link rel="manifest" href="manifest.json">
+  <meta name="theme-color" content="#0d1117">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h1>💹 Pro FX</h1>
+
+<div class="box">
+  <p><strong>Account:</strong> Zakaria Moustaid</p>
+  <p>Saldo: <span id="balance">250</span> €</p>
+  <p>Asset: EUR/USD</p>
+  <p>Prezzo: <span id="price">1.1000</span></p>
+</div>
+
+<div class="box">
+  <h3>Trading</h3>
+  <input type="number" id="amount" placeholder="Importo €">
+  <button onclick="buy()">BUY</button>
+  <button onclick="sell()">SELL</button>
+</div>
+
+<div class="box">
+  <h3>Opzioni (30s)</h3>
+  <button onclick="call()">CALL</button>
+  <button onclick="put()">PUT</button>
+</div>
+
+<div class="box">
+  <h3>🤖 Bot Trading</h3>
+  <button id="botBtn" onclick="toggleBot()">ATTIVA BOT</button>
+  <p>Stato: <span id="botStatus">OFF</span></p>
+</div>
+
+<div class="box">
+  <h3>⚙️ Impostazioni</h3>
+  <button onclick="deposit()">Deposito</button>
+  <button onclick="withdraw()">Prelievo</button>
+  <button onclick="resetAccount()">Reset Demo</button>
+</div>
+
+<h3>📜 Storico Operazioni</h3>
+<ul id="history"></ul>
+
+<script src="script.js"></script>
+
+<script>
+if ("serviceWorker" in navigator) {
+  navigator.serviceWorker.register("service-worker.js");
+}
+</script>
+
+</body>
+</html>
