@@ -1,0 +1,47 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #0d1117;
+  color: white;
+  text-align: center;
+}
+
+h1 {
+  padding: 15px;
+  background: #161b22;
+}
+
+.box {
+  background: #161b22;
+  margin: 12px;
+  padding: 15px;
+  border-radius: 10px;
+}
+
+button {
+  padding: 10px;
+  margin: 5px;
+  width: 80%;
+  background: #238636;
+  border: none;
+  color: white;
+  font-size: 16px;
+  border-radius: 8px;
+}
+
+button:active {
+  opacity: 0.8;
+}
+
+input {
+  width: 80%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 6px;
+  border: none;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
